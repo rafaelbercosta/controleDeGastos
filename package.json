@@ -10,6 +10,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.6.3",
+    "homepage": " https://rafaelbercosta.github.io/controleDeGastos/",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "4.4.0",
@@ -19,8 +20,7 @@
     "redux": "4.2.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "2.4.1",
-    "stylelint-order": "5.0.0",
-    "homepage": " https://rafaelbercosta.github.io/carteira/"
+    "stylelint-order": "5.0.0"
   },
   "scripts": {
     "cy": "env CY_CLI=true cypress run",
@@ -33,8 +33,7 @@
     "lint": "eslint --no-inline-config --no-error-on-unmatched-pattern -c .eslintrc.json . --ext .js, .jsx",
     "lint:styles": "npx stylelint '**/*.css'",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
