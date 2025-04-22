@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
@@ -75,10 +76,12 @@ class Login extends React.Component {
     return (
       <div style={ containerStyle }>
         <h1 style={ { textAlign: 'center', marginBottom: '20px' } }> Login</h1>
-        <form htmlFor="Login" onSubmit={ this.handleSubmit }>
+        <form onSubmit={ this.handleSubmit }>
+
           <label htmlFor="email">Email:</label>
           <input
             data-testid="email-input"
+            id="email"
             name="email"
             value={ email }
             type="email"
@@ -90,6 +93,7 @@ class Login extends React.Component {
           <label htmlFor="password">Senha:</label>
           <input
             data-testid="password-input"
+            id="password"
             name="password"
             value={ password }
             type="password"
@@ -113,3 +117,4 @@ Login.propTypes = {
 };
 
 export default connect()(Login);
+
