@@ -21,7 +21,8 @@ class Login extends React.Component {
     const { email, password } = this.state;
     const { dispatch, history } = this.props;
 
-    const emailRequirements = /^[a-z0-9.]+@[a-z0-9]+\.(com)$/i;
+    const emailRequirements = /^[a-z0-9._]+@[a-z0-9]+\.[a-z.]{2,}$/i
+;
     const isEmailValid = emailRequirements.test(email);
     const min = 6;
     const isPasswordValid = password.length >= min;
