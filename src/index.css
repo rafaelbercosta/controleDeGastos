@@ -68,7 +68,7 @@ button {
 }
 
 input[type="number"] {
-  width: 70px;         /* Menor largura */
+  width: 50px;         /* Menor largura */
   padding: 4px;        /* Menos preenchimento */
   font-size: 0.75rem;  /* Texto menor */
   border: 1px solid #ccc;
