@@ -19,7 +19,6 @@ export function requestFetch() {
   return async (dispatch) => {
     const makeFetch = await fetch('https://economia.awesomeapi.com.br/json/all');
     const response = await makeFetch.json();
-    console.log(response);
     dispatch(fetchApi(response));
   };
 }

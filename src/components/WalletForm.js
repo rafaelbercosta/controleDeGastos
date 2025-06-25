@@ -48,7 +48,6 @@ class WalletForm extends Component {
     const category = ['Alimentação', 'Lazer', 'Trabalho', 'Transporte', 'Saúde'];
     const { value, description, currency, method, tag } = this.state;
     const { coins } = this.props;
-    console.log(coins);
     return (
       <div>
         <form>
